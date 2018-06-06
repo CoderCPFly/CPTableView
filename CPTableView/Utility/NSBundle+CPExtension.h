@@ -11,7 +11,8 @@
 
 @interface NSBundle (CPExtension)
 
-+ (instancetype)cp_commonBundle;
++ (instancetype)cp_tableViewBundle;
 + (UIImage *)cp_arrowImage;
++ (UIImage *)cp_checkmarkImage;
 
 @end

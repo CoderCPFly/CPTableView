@@ -84,6 +84,10 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     CPSectionConfig *sectionConfig = self.dataArr[section];
+    if (sectionConfig.headerViewBlock) {
+        return sectionConfig.headerViewBlock();
+    }
+    
     if (sectionConfig.headerTitle || sectionConfig.headerAttrTitle) {
         CPTableViewHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:HeaderViewCellID];
         if (sectionConfig.headerAttrTitle) {
@@ -99,6 +103,9 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     CPSectionConfig *sectionConfig = self.dataArr[section];
+    if (sectionConfig.footerViewBlock) {
+        return sectionConfig.footerViewBlock();
+    }
     if (sectionConfig.footerTitle || sectionConfig.footerAttrTitle) {
         CPTableViewFooterView *footerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:FooterViewCellID];
         if (sectionConfig.footerAttrTitle) {
@@ -164,6 +171,11 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     CPSectionConfig *sectionConfig = self.dataArr[section];
+    if (sectionConfig.headerViewBlock) {
+        UIView *headerView = sectionConfig.headerViewBlock();
+        return headerView.frame.size.height;
+    }
+    
     if (sectionConfig.headerTitleHeight > 0) {
         return sectionConfig.topMarginForHeaderTextInSection + sectionConfig.headerTitleHeight + sectionConfig.bottomMarginForHeaderTextInSection;
     }else {
@@ -173,6 +185,10 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     CPSectionConfig *sectionConfig = self.dataArr[section];
+    if (sectionConfig.footerViewBlock) {
+        UIView *headerView = sectionConfig.footerViewBlock();
+        return headerView.frame.size.height;
+    }
     if (sectionConfig.footerTitleHeight > 0) {
         return sectionConfig.topMarginForFooterTextInSection + sectionConfig.footerTitleHeight + sectionConfig.bottomMarginForFooterTextInSection;
     }else {
@@ -181,6 +197,7 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    if (![view isKindOfClass:[UITableViewHeaderFooterView class]]) return;
     CPSectionConfig *sectionConfig = self.dataArr[section];
     UITableViewHeaderFooterView *sectionHeaderView = (UITableViewHeaderFooterView *)view;
     if (sectionConfig.headerAttrTitle) {
@@ -195,6 +212,7 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+    if (![view isKindOfClass:[UITableViewHeaderFooterView class]]) return;
     CPSectionConfig *sectionConfig = self.dataArr[section];
     UITableViewHeaderFooterView *sectionFooterView = (UITableViewHeaderFooterView *)view;
     if (sectionConfig.footerAttrTitle) {

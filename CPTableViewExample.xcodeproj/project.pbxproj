@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FF74D77A20C14E03001E94C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74D77920C14E03001E94C8 /* AppDelegate.m */; };
-		FF74D77D20C14E03001E94C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74D77C20C14E03001E94C8 /* ViewController.m */; };
-		FF74D78020C14E03001E94C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF74D77E20C14E03001E94C8 /* Main.storyboard */; };
 		FF74D78220C14E04001E94C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF74D78120C14E04001E94C8 /* Assets.xcassets */; };
 		FF74D78520C14E04001E94C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF74D78320C14E04001E94C8 /* LaunchScreen.storyboard */; };
 		FF74D78820C14E04001E94C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74D78720C14E04001E94C8 /* main.m */; };
@@ -25,15 +23,25 @@
 		FF9B6F7420C661A4000172B0 /* UILabel+CPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F6420C661A4000172B0 /* UILabel+CPExtension.m */; };
 		FF9B6F7520C661A4000172B0 /* UIView+CPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F6820C661A4000172B0 /* UIView+CPExtension.m */; };
 		FF9B6F7620C661A4000172B0 /* NSString+CPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F6A20C661A4000172B0 /* NSString+CPExtension.m */; };
+		FF9B6F7820C664E1000172B0 /* CPTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF9B6F7720C664E1000172B0 /* CPTableView.bundle */; };
+		FF9B6F7B20C66619000172B0 /* CPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F7A20C66619000172B0 /* CPMeViewController.m */; };
+		FF9B6F7E20C6666D000172B0 /* CPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F7D20C6666D000172B0 /* CPSettingViewController.m */; };
+		FF9B6F8220C66CCB000172B0 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9B6F7F20C66CCA000172B0 /* Discover.xcassets */; };
+		FF9B6F8320C66CCB000172B0 /* Emoji.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9B6F8020C66CCA000172B0 /* Emoji.xcassets */; };
+		FF9B6F8420C66CCB000172B0 /* Me.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9B6F8120C66CCB000172B0 /* Me.xcassets */; };
+		FF9B6F8720C66F84000172B0 /* CPPrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F8620C66F84000172B0 /* CPPrivacyViewController.m */; };
+		FF9B6F8D20C66FC9000172B0 /* CPAccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F8C20C66FC9000172B0 /* CPAccountSafeViewController.m */; };
+		FF9B6F9020C66FE2000172B0 /* CPLoginEeptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F8F20C66FE2000172B0 /* CPLoginEeptViewController.m */; };
+		FF9B6F9320C67095000172B0 /* CPSettingLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F9220C67095000172B0 /* CPSettingLanguageViewController.m */; };
+		FF9B6F9620C67253000172B0 /* CPMoreSafeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F9520C67253000172B0 /* CPMoreSafeSettingViewController.m */; };
+		FF9B6F9920C67494000172B0 /* CPCommonUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F9820C67494000172B0 /* CPCommonUseViewController.m */; };
+		FF9B6F9C20C67521000172B0 /* CPAssistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B6F9B20C67521000172B0 /* CPAssistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF74D77520C14E03001E94C8 /* CPTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF74D77820C14E03001E94C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF74D77920C14E03001E94C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF74D77B20C14E03001E94C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FF74D77C20C14E03001E94C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF74D77F20C14E03001E94C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF74D78120C14E04001E94C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF74D78420C14E04001E94C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF74D78620C14E04001E94C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +72,28 @@
 		FF9B6F6820C661A4000172B0 /* UIView+CPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CPExtension.m"; sourceTree = "<group>"; };
 		FF9B6F6920C661A4000172B0 /* UILabel+CPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CPExtension.h"; sourceTree = "<group>"; };
 		FF9B6F6A20C661A4000172B0 /* NSString+CPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CPExtension.m"; sourceTree = "<group>"; };
+		FF9B6F7720C664E1000172B0 /* CPTableView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CPTableView.bundle; sourceTree = "<group>"; };
+		FF9B6F7920C66619000172B0 /* CPMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPMeViewController.h; sourceTree = "<group>"; };
+		FF9B6F7A20C66619000172B0 /* CPMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPMeViewController.m; sourceTree = "<group>"; };
+		FF9B6F7C20C6666D000172B0 /* CPSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPSettingViewController.h; sourceTree = "<group>"; };
+		FF9B6F7D20C6666D000172B0 /* CPSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPSettingViewController.m; sourceTree = "<group>"; };
+		FF9B6F7F20C66CCA000172B0 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		FF9B6F8020C66CCA000172B0 /* Emoji.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Emoji.xcassets; sourceTree = "<group>"; };
+		FF9B6F8120C66CCB000172B0 /* Me.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Me.xcassets; sourceTree = "<group>"; };
+		FF9B6F8520C66F84000172B0 /* CPPrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPrivacyViewController.h; sourceTree = "<group>"; };
+		FF9B6F8620C66F84000172B0 /* CPPrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPPrivacyViewController.m; sourceTree = "<group>"; };
+		FF9B6F8B20C66FC9000172B0 /* CPAccountSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAccountSafeViewController.h; sourceTree = "<group>"; };
+		FF9B6F8C20C66FC9000172B0 /* CPAccountSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAccountSafeViewController.m; sourceTree = "<group>"; };
+		FF9B6F8E20C66FE1000172B0 /* CPLoginEeptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPLoginEeptViewController.h; sourceTree = "<group>"; };
+		FF9B6F8F20C66FE2000172B0 /* CPLoginEeptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPLoginEeptViewController.m; sourceTree = "<group>"; };
+		FF9B6F9120C67095000172B0 /* CPSettingLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPSettingLanguageViewController.h; sourceTree = "<group>"; };
+		FF9B6F9220C67095000172B0 /* CPSettingLanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPSettingLanguageViewController.m; sourceTree = "<group>"; };
+		FF9B6F9420C67253000172B0 /* CPMoreSafeSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPMoreSafeSettingViewController.h; sourceTree = "<group>"; };
+		FF9B6F9520C67253000172B0 /* CPMoreSafeSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPMoreSafeSettingViewController.m; sourceTree = "<group>"; };
+		FF9B6F9720C67494000172B0 /* CPCommonUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCommonUseViewController.h; sourceTree = "<group>"; };
+		FF9B6F9820C67494000172B0 /* CPCommonUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPCommonUseViewController.m; sourceTree = "<group>"; };
+		FF9B6F9A20C67521000172B0 /* CPAssistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAssistViewController.h; sourceTree = "<group>"; };
+		FF9B6F9B20C67521000172B0 /* CPAssistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAssistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +129,27 @@
 				FF9B6F4F20C661A4000172B0 /* CPTableView */,
 				FF74D77820C14E03001E94C8 /* AppDelegate.h */,
 				FF74D77920C14E03001E94C8 /* AppDelegate.m */,
-				FF74D77B20C14E03001E94C8 /* ViewController.h */,
-				FF74D77C20C14E03001E94C8 /* ViewController.m */,
-				FF74D77E20C14E03001E94C8 /* Main.storyboard */,
+				FF9B6F7920C66619000172B0 /* CPMeViewController.h */,
+				FF9B6F7A20C66619000172B0 /* CPMeViewController.m */,
+				FF9B6F7C20C6666D000172B0 /* CPSettingViewController.h */,
+				FF9B6F7D20C6666D000172B0 /* CPSettingViewController.m */,
+				FF9B6F8520C66F84000172B0 /* CPPrivacyViewController.h */,
+				FF9B6F8620C66F84000172B0 /* CPPrivacyViewController.m */,
+				FF9B6F9720C67494000172B0 /* CPCommonUseViewController.h */,
+				FF9B6F9820C67494000172B0 /* CPCommonUseViewController.m */,
+				FF9B6F8B20C66FC9000172B0 /* CPAccountSafeViewController.h */,
+				FF9B6F8C20C66FC9000172B0 /* CPAccountSafeViewController.m */,
+				FF9B6F8E20C66FE1000172B0 /* CPLoginEeptViewController.h */,
+				FF9B6F8F20C66FE2000172B0 /* CPLoginEeptViewController.m */,
+				FF9B6F9120C67095000172B0 /* CPSettingLanguageViewController.h */,
+				FF9B6F9220C67095000172B0 /* CPSettingLanguageViewController.m */,
+				FF9B6F9420C67253000172B0 /* CPMoreSafeSettingViewController.h */,
+				FF9B6F9520C67253000172B0 /* CPMoreSafeSettingViewController.m */,
+				FF9B6F9A20C67521000172B0 /* CPAssistViewController.h */,
+				FF9B6F9B20C67521000172B0 /* CPAssistViewController.m */,
+				FF9B6F7F20C66CCA000172B0 /* Discover.xcassets */,
+				FF9B6F8020C66CCA000172B0 /* Emoji.xcassets */,
+				FF9B6F8120C66CCB000172B0 /* Me.xcassets */,
 				FF74D78120C14E04001E94C8 /* Assets.xcassets */,
 				FF74D78320C14E04001E94C8 /* LaunchScreen.storyboard */,
 				FF74D78620C14E04001E94C8 /* Info.plist */,
@@ -113,6 +161,7 @@
 		FF9B6F4F20C661A4000172B0 /* CPTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FF9B6F7720C664E1000172B0 /* CPTableView.bundle */,
 				FF9B6F5A20C661A4000172B0 /* CPTableViewSDK.h */,
 				FF9B6F6020C661A4000172B0 /* CPTableView.h */,
 				FF9B6F5620C661A4000172B0 /* CPTableView.m */,
@@ -177,6 +226,7 @@
 		FF74D76D20C14E02001E94C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CP;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "陈鹏";
 				TargetAttributes = {
@@ -208,9 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9B6F7820C664E1000172B0 /* CPTableView.bundle in Resources */,
+				FF9B6F8220C66CCB000172B0 /* Discover.xcassets in Resources */,
 				FF74D78520C14E04001E94C8 /* LaunchScreen.storyboard in Resources */,
+				FF9B6F8420C66CCB000172B0 /* Me.xcassets in Resources */,
 				FF74D78220C14E04001E94C8 /* Assets.xcassets in Resources */,
-				FF74D78020C14E03001E94C8 /* Main.storyboard in Resources */,
+				FF9B6F8320C66CCB000172B0 /* Emoji.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,34 +275,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9B6F6D20C661A4000172B0 /* CPTableView.m in Sources */,
+				FF9B6F8D20C66FC9000172B0 /* CPAccountSafeViewController.m in Sources */,
 				FF9B6F7520C661A4000172B0 /* UIView+CPExtension.m in Sources */,
 				FF9B6F6E20C661A4000172B0 /* CPTableViewFooterView.m in Sources */,
-				FF74D77D20C14E03001E94C8 /* ViewController.m in Sources */,
 				FF9B6F7320C661A4000172B0 /* NSBundle+CPExtension.m in Sources */,
+				FF9B6F7E20C6666D000172B0 /* CPSettingViewController.m in Sources */,
+				FF9B6F8720C66F84000172B0 /* CPPrivacyViewController.m in Sources */,
+				FF9B6F9C20C67521000172B0 /* CPAssistViewController.m in Sources */,
 				FF74D78820C14E04001E94C8 /* main.m in Sources */,
 				FF9B6F7120C661A4000172B0 /* CPCellModel.m in Sources */,
 				FF9B6F7020C661A4000172B0 /* CPGlobalConfig.m in Sources */,
+				FF9B6F9020C66FE2000172B0 /* CPLoginEeptViewController.m in Sources */,
 				FF9B6F6C20C661A4000172B0 /* CPTableViewHeaderView.m in Sources */,
 				FF9B6F7420C661A4000172B0 /* UILabel+CPExtension.m in Sources */,
 				FF9B6F6B20C661A4000172B0 /* CPTableViewCell.m in Sources */,
+				FF9B6F9320C67095000172B0 /* CPSettingLanguageViewController.m in Sources */,
 				FF9B6F7220C661A4000172B0 /* CPSectionConfig.m in Sources */,
 				FF9B6F6F20C661A4000172B0 /* CPSignleConfig.m in Sources */,
+				FF9B6F9620C67253000172B0 /* CPMoreSafeSettingViewController.m in Sources */,
 				FF74D77A20C14E03001E94C8 /* AppDelegate.m in Sources */,
 				FF9B6F7620C661A4000172B0 /* NSString+CPExtension.m in Sources */,
+				FF9B6F9920C67494000172B0 /* CPCommonUseViewController.m in Sources */,
+				FF9B6F7B20C66619000172B0 /* CPMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF74D77E20C14E03001E94C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF74D77F20C14E03001E94C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF74D78320C14E04001E94C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -376,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347ZM843CB;
 				INFOPLIST_FILE = CPTableViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347ZM843CB;
 				INFOPLIST_FILE = CPTableViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -10,6 +10,11 @@
 #import "UILabel+CPExtension.h"
 #import "CPCellModel.h"
 
+/** section 头部视图 自定义view */
+typedef UIView *(^sectionHeaderViewBlock)(void);
+/** section 尾部视图 自定义view */
+typedef UIView *(^sectionFooterViewBlock)(void);
+
 @interface CPSectionConfig : NSObject
 
 // header
@@ -27,7 +32,8 @@
 @property (nonatomic, assign) CGFloat topMarginForHeaderTextInSection;
 /** section头部视图 文字 尾间距 */
 @property (nonatomic, assign) CGFloat bottomMarginForHeaderTextInSection;
-
+/** section 头部视图 自定义view */
+@property (nonatomic, copy) sectionHeaderViewBlock headerViewBlock;
 
 // footer
 /** section尾部标题 */
@@ -44,6 +50,8 @@
 @property (nonatomic, assign) CGFloat topMarginForFooterTextInSection;
 /** section尾部视图 文字 尾间距 */
 @property (nonatomic, assign) CGFloat bottomMarginForFooterTextInSection;
+/** section 尾部视图 自定义view */
+@property (nonatomic, copy) sectionFooterViewBlock footerViewBlock;
 
 /** 通用模型数组 */
 @property (nonatomic, strong) NSMutableArray<CPCellModel *> *commonModelArr;

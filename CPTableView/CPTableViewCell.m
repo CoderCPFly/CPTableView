@@ -162,6 +162,8 @@
  */
 - (void)layoutTextAndImageView {
     CPSignleConfig *signleConfig = self.cellModel.signleConfig;
+    self.imageView.size = signleConfig.iconImageSize;
+    self.imageView.centerY = self.contentView.centerY;
     if (self.cellModel.icon.length > 0) {
         if (!signleConfig.isTitleFront) {
             self.imageView.x = signleConfig.leftMargin;
@@ -254,7 +256,7 @@
     if (!_accessoryArrow) {
         _accessoryArrow = [[UIImageView alloc] init];
         UIImage *img = [[UIImage imageNamed:@"RightArrowGray"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        _accessoryArrow.image = img;
+        _accessoryArrow.image = [NSBundle cp_arrowImage];
         _accessoryArrow.tintColor = [CPGlobalConfig sharedInstance].accessoryArrowColor;
     }
     return _accessoryArrow;
@@ -276,7 +278,7 @@
     if (!_accessoryCheckmark) {
         _accessoryCheckmark = [[UIImageView alloc] init];
         UIImage *img = [[UIImage imageNamed:@"RightCheckMark"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        _accessoryCheckmark.image = img;
+        _accessoryCheckmark.image = [NSBundle cp_checkmarkImage];
         _accessoryCheckmark.hidden = YES;
         _accessoryCheckmark.tintColor = [CPGlobalConfig sharedInstance].accessoryCheckmarkColor;;
     }

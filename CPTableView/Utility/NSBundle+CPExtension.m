@@ -11,20 +11,28 @@
 
 @implementation NSBundle (CPExtension)
 
-+ (instancetype)cp_commonBundle {
-    static NSBundle *commonBundle = nil;
-    if (commonBundle == nil) {
-        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[CPTableViewCell class]] pathForResource:@"CPCell" ofType:@"bundle"]];
++ (instancetype)cp_tableViewBundle {
+    static NSBundle *tableViewBundle = nil;
+    if (tableViewBundle == nil) {
+        tableViewBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[CPTableViewCell class]] pathForResource:@"CPTableView" ofType:@"bundle"]];
     }
-    return commonBundle;
+    return tableViewBundle;
 }
 
 + (UIImage *)cp_arrowImage {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
-         arrowImage = [[UIImage imageWithContentsOfFile:[[self cp_commonBundle] pathForResource:@"RightArrowGray@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+         arrowImage = [[UIImage imageWithContentsOfFile:[[self cp_tableViewBundle] pathForResource:@"RightArrowGray@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     }
     return arrowImage;
+}
+
++ (UIImage *)cp_checkmarkImage {
+    static UIImage *checkmarkImage = nil;
+    if (checkmarkImage == nil) {
+        checkmarkImage = [[UIImage imageWithContentsOfFile:[[self cp_tableViewBundle] pathForResource:@"RightCheckMark@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    }
+    return checkmarkImage;
 }
 
 @end
