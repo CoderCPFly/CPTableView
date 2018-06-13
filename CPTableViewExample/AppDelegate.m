@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CPMeViewController.h"
+#import "CPConst.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    NSArray *titleArr = @[@"微信", @"通讯录", @"发现", @"我"];
+    NSArray *imageArr = @[@"tabbar_mainframe", @"tabbar_contacts", @"tabbar_discover", @"tabbar_me"];
+    for (int i = 0 ; i < titleArr.count; i++) {
+        NSString *title = titleArr[i];
+        NSString *imageName = imageArr[i];
+        NSString *selectedImageName = [NSString stringWithFormat:@"%@HL", imageName];
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        if ([title isEqualToString:@"我"]) {
+            vc = [[CPMeViewController alloc] init];
+        }
+        vc.title = title;
+        vc.tabBarItem.image = [UIImage imageNamed:imageName];
+        NSMutableDictionary *barBtnAttrs = [NSMutableDictionary dictionary];
+        barBtnAttrs[NSForegroundColorAttributeName] = CPColorWithRGB(30, 161, 20, 1);
+        [vc.tabBarItem setTitleTextAttributes:barBtnAttrs forState:UIControlStateSelected];
+        vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        NSMutableDictionary *navBarAttrs = [NSMutableDictionary dictionary];
+        navBarAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+        [nav.navigationBar setTitleTextAttributes:navBarAttrs];
+        nav.navigationBar.barTintColor = [UIColor blackColor];
+        nav.navigationBar.barStyle = UIBarStyleBlack;
+        nav.navigationBar.tintColor = [UIColor whiteColor];
+        [tabBarVc addChildViewController:nav];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    CPMeViewController *vc = [[CPMeViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    self.window.rootViewController = tabBarVc;
     [self.window makeKeyAndVisible];
     
     return YES;

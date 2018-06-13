@@ -40,6 +40,8 @@ typedef void (^CPDidDeleteRowBlock)(NSIndexPath *, CPCellModel *);
 @property (nonatomic, copy) CPDidDeleteRowBlock didDeleteRowBlock;
 /** cell分隔符样式 */
 @property (nonatomic, assign) CPTableViewCellSeparatorStyle separatorType;
+/** cell高度 */
+@property (nonatomic, assign) CGFloat cellRowHeight;
 /** cell 删除时显示的字符串 */
 @property (nonatomic, copy) NSString *deleteStr;;
 

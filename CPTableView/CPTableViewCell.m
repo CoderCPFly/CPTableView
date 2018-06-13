@@ -102,6 +102,13 @@
     self.accessoryLabel.hidden = _cellModel.accessoryTitle.length > 0 ? NO : YES;
     self.accessoryImageView.image = _cellModel.accessoryIcon.length ? [UIImage imageNamed:_cellModel.accessoryIcon] : nil;
     self.accessoryImageView.hidden = _cellModel.accessoryIcon.length > 0 ? NO : YES;
+    if (_cellModel.signleConfig.accessoryIconImageCornerRadius > 0) {
+        self.accessoryImageView.layer.cornerRadius = _cellModel.signleConfig.accessoryIconImageCornerRadius;
+        self.accessoryImageView.layer.masksToBounds = YES;
+    }else {
+        self.accessoryImageView.layer.masksToBounds = NO;
+        self.accessoryImageView.layer.cornerRadius = 0;
+    }
 }
 
 /**
@@ -215,8 +222,8 @@
             self.accessoryLabel.x = self.accessoryImageView.x - signleConfig.accessoryIconAndTitleSpaceBetween - self.accessoryLabel.width;
         }
     }else if (self.cellModel.accessoryIcon.length > 0) {
-        self.accessoryImageView.centerY  = self.contentView.centerY;
         self.accessoryImageView.size = signleConfig.accessoryIconImageSize;
+        self.accessoryImageView.centerY  = self.contentView.centerY;
         self.accessoryImageView.x = CPScreenWidth - extraWidth - signleConfig.rightMargin - self.accessoryImageView.width;
     }else if (self.cellModel.accessoryTitle.length > 0) {
         [self.accessoryLabel sizeToFit];
@@ -255,7 +262,6 @@
 - (UIImageView *)accessoryArrow {
     if (!_accessoryArrow) {
         _accessoryArrow = [[UIImageView alloc] init];
-        UIImage *img = [[UIImage imageNamed:@"RightArrowGray"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         _accessoryArrow.image = [NSBundle cp_arrowImage];
         _accessoryArrow.tintColor = [CPGlobalConfig sharedInstance].accessoryArrowColor;
     }
@@ -277,7 +283,6 @@
 - (UIImageView *)accessoryCheckmark {
     if (!_accessoryCheckmark) {
         _accessoryCheckmark = [[UIImageView alloc] init];
-        UIImage *img = [[UIImage imageNamed:@"RightCheckMark"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         _accessoryCheckmark.image = [NSBundle cp_checkmarkImage];
         _accessoryCheckmark.hidden = YES;
         _accessoryCheckmark.tintColor = [CPGlobalConfig sharedInstance].accessoryCheckmarkColor;;

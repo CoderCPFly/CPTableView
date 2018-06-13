@@ -45,7 +45,7 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
         self.showsHorizontalScrollIndicator = NO;
         self.estimatedSectionHeaderHeight = 0;
         self.estimatedSectionFooterHeight = 0;
-        self.rowHeight = 44;
+        self.cellRowHeight = 44;
         self.deleteStr = @"删除";
         [self registerClass:[CPTableViewHeaderView class] forHeaderFooterViewReuseIdentifier:HeaderViewCellID];
         [self registerClass:[CPTableViewFooterView class] forHeaderFooterViewReuseIdentifier:FooterViewCellID];
@@ -125,6 +125,12 @@ static NSString * const FooterViewCellID = @"CPCommonFooterViewCellID";
 
 
 #pragma mark - UIDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CPSectionConfig *sectionConfig = self.dataArr[indexPath.section];
+    CPCellModel *model = sectionConfig.commonModelArr[indexPath.row];
+    return model.cellRowHeight > 0 ? model.cellRowHeight : self.cellRowHeight;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CPSectionConfig *sectionConfig = self.dataArr[indexPath.section];
     CPCellModel *model = sectionConfig.commonModelArr[indexPath.row];

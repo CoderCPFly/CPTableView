@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF276D5620CFC89F00751879 /* CPPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF276D5520CFC89F00751879 /* CPPersonalInfoViewController.m */; };
 		FF74D77A20C14E03001E94C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74D77920C14E03001E94C8 /* AppDelegate.m */; };
 		FF74D78220C14E04001E94C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF74D78120C14E04001E94C8 /* Assets.xcassets */; };
 		FF74D78520C14E04001E94C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF74D78320C14E04001E94C8 /* LaunchScreen.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF276D5420CFC89F00751879 /* CPPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPersonalInfoViewController.h; sourceTree = "<group>"; };
+		FF276D5520CFC89F00751879 /* CPPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPPersonalInfoViewController.m; sourceTree = "<group>"; };
 		FF74D77520C14E03001E94C8 /* CPTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF74D77820C14E03001E94C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF74D77920C14E03001E94C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				FF74D77920C14E03001E94C8 /* AppDelegate.m */,
 				FF9B6F7920C66619000172B0 /* CPMeViewController.h */,
 				FF9B6F7A20C66619000172B0 /* CPMeViewController.m */,
+				FF276D5420CFC89F00751879 /* CPPersonalInfoViewController.h */,
+				FF276D5520CFC89F00751879 /* CPPersonalInfoViewController.m */,
 				FF9B6F7C20C6666D000172B0 /* CPSettingViewController.h */,
 				FF9B6F7D20C6666D000172B0 /* CPSettingViewController.m */,
 				FF9B6F8520C66F84000172B0 /* CPPrivacyViewController.h */,
@@ -285,6 +290,7 @@
 				FF74D78820C14E04001E94C8 /* main.m in Sources */,
 				FF9B6F7120C661A4000172B0 /* CPCellModel.m in Sources */,
 				FF9B6F7020C661A4000172B0 /* CPGlobalConfig.m in Sources */,
+				FF276D5620CFC89F00751879 /* CPPersonalInfoViewController.m in Sources */,
 				FF9B6F9020C66FE2000172B0 /* CPLoginEeptViewController.m in Sources */,
 				FF9B6F6C20C661A4000172B0 /* CPTableViewHeaderView.m in Sources */,
 				FF9B6F7420C661A4000172B0 /* UILabel+CPExtension.m in Sources */,

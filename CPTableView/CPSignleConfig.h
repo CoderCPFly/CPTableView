@@ -45,6 +45,8 @@
 @property (nonatomic, strong) UIFont *accessoryTitleFont;
 /** 附件图片大小 */
 @property (nonatomic, assign) CGSize accessoryIconImageSize;
+/** 附件图片 圆角大小 */
+@property (nonatomic, assign) CGFloat accessoryIconImageCornerRadius;
 /** 附件和右侧图片或者标题间距 */
 @property (nonatomic, assign) CGFloat accessoryViewAndIconTitleSpaceBetween;
 /** 附件图片和附件文字间距 */

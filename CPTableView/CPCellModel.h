@@ -45,6 +45,9 @@ typedef void (^CPModelClickBlock)(void);
 /** 中间标题 */
 @property (nonatomic, copy) NSString *centerTitle;
 
+/**  model所在cell的高度 默认为0 cell高度采用  CPTableView的rowHeight */
+@property (nonatomic, assign) CGFloat cellRowHeight;
+
 /** model所在cell的类型 */
 @property (nonatomic, assign) CPCellType cellType;
 /** cell中子控件样式配置对象 */
