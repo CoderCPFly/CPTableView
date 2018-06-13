@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'CPTableView'
-s.version      = '0.0.1'
+s.version      = '0.0.2'
 s.summary      = 'An easy way to use some tableview example (set)'
 s.homepage     = 'https://github.com/CoderCPFly/CPTableView'
 s.license      = 'MIT'
